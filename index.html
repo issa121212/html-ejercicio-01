@@ -1,15 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script type="module" src="/js/main.js"></script>
+    <title>Paseo de Mascotas - Cuidado y Paseos Diarios</title>
+    <link rel="icon" type="image/jpeg" href="imgs/logo-marca.jpeg">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js"></script>
 </head>
 <body>
-    <h1>Paseo de mascotas</h1>
-    <p>Todos los días ofrecemos paseos para tu mascota.</p>
-    <img src="/imgs/logo..jpg" alt="" srcset="">
+    <header class="row menu-principal">
+        <div class="logo-box">
+            <img src="imgs/logo-marca.jpeg" alt="Logo" width="45">
+            <h1>PetSitter</h1>
+        </div>
+        <nav>
+            <a href="login.html" class="btn">Iniciar Sesión</a>
+            <a href="register.html" class="btn">Registrarse</a>
+        </nav>
+    </header>
+
+    <main> 
+        <section>
+            <h2>¿Quiénes Somos?</h2>
+            <p>De la mano de un equipo especializado, cuidamos y paseamos a tus mascotas con dedicación y seguridad diaria.</p>
+        </section>
+
+        <section>
+            <h2>Nuestros Peludos</h2>
+            <div class="row">
+                <div class="col-6 col-sm-12 card">
+                    <img src="imgs/golden.avif" alt="Mascota 1" class="card-img">
+                    <h3>Rocky</h3>
+                    <p>Golden Retriever · 3 años · Enérgico y juguetón.</p>
+                </div>
+                <div class="col-6 col-sm-12 card">
+                    <img src="imgs/gato.jpg" alt="Mascota 2" class="card-img">
+                    <h3>Luna</h3>
+                    <p>Gata Mestiza · 2 años · Regalona y tranquila.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Trabajadores</h2>
+            <div class="row">
+                <div class="col-6 col-sm-12 card">
+                    <img src="imgs/carlos.webp" alt="Trabajador 1" class="card-img">
+                    <h3>Carlos Muñoz</h3>
+                    <p>Paseador canino certificado con 4 años de experiencia.</p>
+                </div>
+                <div class="col-6 col-sm-12 card">
+                    <img src="imgs/valentina.webp" alt="Trabajador 2" class="card-img">
+                    <h3>Valentina Soto</h3>
+                    <p>Cuidadora especialista en primeros auxilios veterinarios.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="agendar">
+            <h2>Agendar Servicio</h2>
+            <p>Para agendar un paseo para tu mascota, ingresa con tu cuenta o regístrate:</p>
+            <a href="login.html" class="btn">Ingresar Usuario</a>
+            <a href="register.html" class="btn">Registrarse</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>PetSitter Chile · Cuidado y paseos profesionales</p>
+        <p>Contacto: contacto@petsitter.cl | +56 9 1234 5678 | Santiago, Chile</p>
+        <p>2026 PetSitter. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
