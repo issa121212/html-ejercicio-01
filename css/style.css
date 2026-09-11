@@ -24,3 +24,18 @@ body{
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  .menu-principal {
+    height: 50px;
+  }
+
+  .menu-principal ul {
+    display: flex;
+    gap: 1rem;
+  }
+}
