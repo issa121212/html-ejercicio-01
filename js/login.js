@@ -12,6 +12,11 @@ const usuarios = [
     }
 ];
 
+const usuarioRegistrado = JSON.parse(localStorage.getItem("usuario"));
+if (usuarioRegistrado) {
+    usuarios.push(usuarioRegistrado);
+}
+
 function esCorreoValido(correo) {
 
     const correoPartido = correo.split("@");
