@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>petsitter</title>
+</head>
+<body>
+  <div class="tarjeta-formulario">
+    <form>
+      <h2>PetSitter🐾</h2><br>
+      <div class="fila campo">
+        <div class="columna">
+          <label for="nombre">Nombres</label>
+          <input class="input" type="text" placeholder="Ej: Daniel">
+        </div>
+        <div class="columna">
+          <label for="apellido">Apellidos</label>
+          <input class="input" type="text" placeholder="Ej: González">
+        </div>
+      </div>
+      <label>Correo electrónico:</label>
+      <input class="input" type="email" placeholder="Ej: javier@gmail.com"><br>
+      <label>Teléfono:</label>
+      <input class="input" type="tel" placeholder="Ej: 999999999"><br>
+      <label>Rut</label>
+      <input class="input" type="text" placeholder="Ej: 22.222.222-2"><br><br>
+
+      <div class="opciones-genero">
+        <label>Sexo</label><br>
+        <label class="opcion-btn">
+          <input type="radio" name="genero" value="masculino">
+          <span>Masculino</span>
+        </label>
+        <label class="opcion-btn">
+          <input type="radio" name="genero" value="femenino">
+          <span>Femenino</span>
+        </label>
+        <label class="opcion-btn">
+          <input type="radio" name="genero" value="otro">
+          <span>Otro</span>
+        </label>
+      </div><br>
+      
+      <div class="fila campo">
+        <div class="columna">
+          <label for="password">Contraseña</label>
+          <input class="input" type="password" placeholder="Min 8 caracteres">
+        </div>
+        <div class="columna">
+          <label for="confirm-password">Confirmar Contraseña</label>
+          <input class="input" type="password" placeholder="repetir contraseña">
+        </div>
+      </div><br>
+      <button class="button is-info">Registrar</button>
+    </form>
+  </div>
+</body>
+</html>
