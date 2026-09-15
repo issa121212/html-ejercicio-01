@@ -1,3 +1,103 @@
-body{
-    background-color: #9cfbca;
+/* Tu fondo y estilos base */
+body {
+  background-color: #9cfbca;
+  font-family: sans-serif;
+  margin: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Grilla base */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.col-1  { width: 8.33%; }
+.col-3  { width: 25%; }
+.col-4  { width: 33.33%; }
+.col-6  { width: calc(50% - 8px); }
+.col-12 { width: 100%; }
+
+/* Separación vertical */
+section {
+  margin-bottom: 25px;
+}
+
+/* Encabezado */
+.menu-principal {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-box h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.menu-principal nav a {
+  text-decoration: none;
+  color: #e3f1ec;
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+/* Tarjetas */
+.card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center; /* Centra la foto y el texto dentro de la tarjeta */
+}
+
+/* ============================================================
+   AQUÍ ESTÁ EL TRUCO: Medida fija que NUNCA cambia al achicar
+   ============================================================ */
+.card-img {
+  width: 140px;              /* Ancho fijo: nunca se agranda ni se achica */
+  height: 140px;             /* Alto fijo: nunca cambia */
+  object-fit: cover;         /* Recorta la foto sin aplastarla */
+  border-radius: 8px;        /* Bordes suaves (o 50% si la quieres circular) */
+  display: block;
+  margin: 0 auto 12px auto;  /* Centrada horizontalmente */
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #1b4332;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Media query: en pantallas chicas pasa a 100% el ancho de la tarjeta */
+@media (max-width: 768px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  .menu-principal {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
 }
